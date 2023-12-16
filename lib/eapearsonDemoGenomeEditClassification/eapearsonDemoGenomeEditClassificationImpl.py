@@ -82,4 +82,3 @@ class eapearsonDemoGenomeEditClassification:
                      'git_commit_hash': self.GIT_COMMIT_HASH}
         #END_STATUS
         return [returnVal]
-        return [returnVal]
