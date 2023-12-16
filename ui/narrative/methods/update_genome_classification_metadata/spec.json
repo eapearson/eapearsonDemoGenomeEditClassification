@@ -64,7 +64,7 @@
             "output_mapping": [
                 {
                     "service_method_output_path": [0, "output_genome_ref"],
-                    "target_property": "genome_object_ref"
+                    "target_property": "output_genome_ref"
                 },
                 {
                     "service_method_output_path": [0, "change_log"],
