@@ -1,13 +1,13 @@
 {
-    "ver": "0.0.1",
+    "ver": "0.0.2",
     "authors": [
         "eapearson"
     ],
-    "contact": "",
+    "contact": "eapearson@lbl.gov",
     "categories": ["active"],
     "widgets": {
         "input": null,
-        "output": null
+        "output": "DynamicServiceWidgetGenericWidget"
     },
     "parameters": [ 
         {
@@ -75,7 +75,7 @@
                     "target_property": "service_module_name"
                 },
                 {
-                    "constant_value": "genome_viewer_demo",
+                    "constant_value": "demo_genome_edit_classification_viewer",
                     "target_property": "widget_name"
                 }
             ]
