@@ -1,0 +1,85 @@
+{
+    "ver": "0.0.1",
+    "authors": [
+        "eapearson"
+    ],
+    "contact": "",
+    "categories": ["active"],
+    "widgets": {
+        "input": null,
+        "output": null
+    },
+    "parameters": [ 
+        {
+            "id": "genome_ref",
+            "optional": false,
+            "advanced": false,
+            "allow_multiple": false,
+            "default_values": [ "" ],
+            "field_type": "text",
+            "text_options": {
+                "valid_ws_types": ["KBaseGenomes.Genome"]
+            }
+        },
+        {
+            "id": "scientific_name",
+            "optional": true,
+            "advanced": false,
+            "allow_multiple": false,
+            "default_values": [ "" ],
+            "field_type": "text"
+        },
+        {
+            "id": "output_genome_name",
+            "optional": false,
+            "advanced": false,
+            "allow_multiple": false,
+            "default_values": [""],
+            "field_type": "text",
+            "text_options": {
+                "valid_ws_types" : [ "KBaseGenomes.Genome" ],
+                "is_output_name":true
+            }
+        }
+    ],
+    "behavior": {
+        "service-mapping": {
+            "url": "",
+            "name": "eapearsonDemoGenomeEditClassification",
+            "method": "update_genome_classification_metadata",
+            "input_mapping": [
+                {
+                    "narrative_system_variable": "workspace_id",
+                    "target_property": "workspace_id"
+                }, 
+                {
+                    "input_parameter": "genome_ref",
+                    "target_property": "genome_ref"
+                }, 
+                {
+                    "input_parameter": "scientific_name",
+                    "target_property": "scientific_name"
+                }
+            ],
+            "output_mapping": [
+                {
+                    "service_method_output_path": [0, "output_genome_ref"],
+                    "target_property": "genome_object_ref"
+                },
+                {
+                    "service_method_output_path": [0, "change_log"],
+                    "target_property": "change_log"
+                },
+                {
+                    "constant_value": "eapearsonWidgetDemo10",
+                    "target_property": "service_module_name"
+                },
+                {
+                    "constant_value": "genome_viewer_demo",
+                    "target_property": "widget_name"
+                }
+            ]
+        }
+    },
+    "job_id_output_field": "docker"
+}

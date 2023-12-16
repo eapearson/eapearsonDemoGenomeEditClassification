@@ -1,0 +1,50 @@
+#
+# define display information
+#
+name: Edit Genome Classification Metadata
+
+tooltip: |
+    Allows one to edit the scientific name, domain, lineage, or taxonomic assignment.
+
+screenshots: []
+
+icon: icon.png
+
+#
+# define a set of similar apps that might be useful to the user
+#
+suggestions:
+    apps:
+        related:
+            []
+        next:
+            []
+
+#
+# Configure the display and description of parameters
+#
+parameters :
+    genome_ref :
+        ui-name : |
+            The genome to edit
+        short-hint : |
+            The genome to edit
+        long-hint  : |
+            The genome to edit
+    scientific_name:
+        ui-name : The binomial scientific name
+        short-hint : |
+            The binomial scientific name
+        long-hint  : |
+            The binomial scientific name
+    output_genome_name:
+        ui-name: Output Genome Object Name
+        short-hint: Provide a name for the new genome object created by the edit
+        long-hint: |
+            As you may well know, each "data object" has a "name" and an "id". Each must
+            be unique within your narrative. An object has a name in order to provide a
+            more human friendly object identifier. However, there are rules...
+            
+
+description : |
+    <p>Blah, blah, blah
