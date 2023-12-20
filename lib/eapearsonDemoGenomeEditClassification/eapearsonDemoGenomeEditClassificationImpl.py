@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 #BEGIN_HEADER
+import datetime
 import logging
 import os
 
@@ -60,11 +61,12 @@ class eapearsonDemoGenomeEditClassification:
         # return variables are: output
         #BEGIN update_genome_classification_metadata
         # Fake it for now...
-
+        created_at = datetime.datetime.now().isoformat()
         output = {
             "output_genome_ref": params["genome_ref"],
             "change_log": ["foo", "bar", "baz"],
-            "title": "Output from Edit Genome Classification Metadata"
+            "title": "Output from Edit Genome Classification Metadata",
+            "subtitle": f"Created {created_at}"
         }
         #END update_genome_classification_metadata
 

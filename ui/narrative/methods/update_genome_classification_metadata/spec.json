@@ -75,6 +75,10 @@
                     "target_property": "title"
                 },
                 {
+                    "service_method_output_path": [0, "subtitle"],
+                    "target_property": "subtitle"
+                },
+                {
                     "constant_value": "eapearsonWidgetTest10",
                     "target_property": "service_module_name"
                 },
