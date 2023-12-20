@@ -63,7 +63,8 @@ class eapearsonDemoGenomeEditClassification:
 
         output = {
             "output_genome_ref": params["genome_ref"],
-            "change_log": ["foo", "bar", "baz"]
+            "change_log": ["foo", "bar", "baz"],
+            "title": "Output from Edit Genome Classification Metadata"
         }
         #END update_genome_classification_metadata
 

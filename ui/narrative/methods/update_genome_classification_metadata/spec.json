@@ -71,6 +71,10 @@
                     "target_property": "change_log"
                 },
                 {
+                    "service_method_output_path": [0, "title"],
+                    "target_property": "title"
+                },
+                {
                     "constant_value": "eapearsonWidgetTest10",
                     "target_property": "service_module_name"
                 },

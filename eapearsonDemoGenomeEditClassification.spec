@@ -11,6 +11,7 @@ module eapearsonDemoGenomeEditClassification {
         /* Will be passed to viewer */
         string output_genome_ref;
         list<ChangeLogEntry> change_log;
+        string title;
 
         /* To identify the viewer */
         string service_module_name;
