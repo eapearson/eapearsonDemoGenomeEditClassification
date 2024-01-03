@@ -7,7 +7,7 @@
     "categories": ["active"],
     "widgets": {
         "input": null,
-        "output": "ServiceWidgetGeneric"
+        "output": "ServiceWidget"
     },
     "parameters": [ 
         {
