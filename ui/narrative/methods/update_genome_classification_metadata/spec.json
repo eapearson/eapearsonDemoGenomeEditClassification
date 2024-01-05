@@ -54,7 +54,8 @@
                 }, 
                 {
                     "input_parameter": "genome_ref",
-                    "target_property": "genome_ref"
+                    "target_property": "genome_ref",
+                    "target_type_transform": "resolved-ref"
                 }, 
                 {
                     "input_parameter": "scientific_name",
@@ -64,7 +65,8 @@
             "output_mapping": [
                 {
                     "service_method_output_path": [0, "output_genome_ref"],
-                    "target_property": "output_genome_ref"
+                    "target_property": "output_genome_ref",
+                    "target_type_transform": "resolved-ref"
                 },
                 {
                     "service_method_output_path": [0, "change_log"],
